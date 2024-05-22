@@ -5,10 +5,10 @@ import UserLists from './UserLists'
 function Sidebar() {
   return (
     <div className='sidebar col-4'>
-        <div className='search-container'>
+        {/* <div className='search-container'>
         <Searchinput/>
 
-        </div>
+        </div> */}
         <div className='userlist-container'>
             
             <UserLists/>

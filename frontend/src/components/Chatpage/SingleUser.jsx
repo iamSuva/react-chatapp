@@ -17,7 +17,7 @@ let isonline=onlineusers.filter(onlineuserid => onlineuserid === user._id);
     <div className='single-user-container'
       
     onClick={()=>setselectedChatuser(user)}
-    style={{backgroundColor:isSelected && "#38b2ac"}}
+    style={{backgroundColor:isSelected && "#E9E7EF"}}
     key={user._id}
     >
         <div className='single-user-img'>

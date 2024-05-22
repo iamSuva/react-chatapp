@@ -1,6 +1,6 @@
 import userModel from "../models/userModel.js";
 import { compareHashPassword, generateHashPassword,generateToken } from "../Auth/auth.js";
-
+import { io } from "../socketio/socketio.js";
 export const registerController=async(req,res)=>{
     try {
         const {username,email,password} = req.body;
@@ -29,6 +29,9 @@ export const registerController=async(req,res)=>{
             password:hashedpassword
         })
        await newUser.save(); 
+       
+        // Emit event to notify connected clients about the new user
+        io.emit("newUserSignup", newUser);
        return res.status(200).send({message:"Successfully registered",success:true,user:newUser});
         
     } catch (error) {

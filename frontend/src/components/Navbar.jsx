@@ -15,9 +15,9 @@ localStorage.removeItem("loginuser");
 }
 
   return (
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-light navbar-expand-lg ">
       <div class="container-fluid">
-        <Link class="navbar-brand" to="">
+        <Link class="navbar-brand" to="/home-chat">
           Chat
         </Link>
         <button

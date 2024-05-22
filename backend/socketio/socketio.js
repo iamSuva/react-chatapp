@@ -6,13 +6,13 @@ export const server=http.createServer(app);
 import  {Server} from "socket.io";
 
 app.use(cors({
-    origin:"http://localhost:3000",
+    origin:"*",
     credentials:true
 }));
 // Create a Socket.IO server
 export const io = new Server(server, {
     cors: {
-        origin: "http://localhost:3000",
+        origin: "*",
         credentials: true
     }
 });

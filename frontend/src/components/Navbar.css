@@ -1,11 +1,14 @@
 .navbar{
-    background-color: rgb(23, 46, 81);
-    color:white;
+    background-color: #354c5b;
     font-size: 20px;
+    color: rgb(34, 32, 32);
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800 ;
 }
 .navbar a{
     text-decoration: none;
-    color: rgb(209, 117, 117);
+   
 
 }
 
@@ -13,4 +16,12 @@
     width:50px;
     height: 50px;
     border-radius: 50%;
+}
+.navbar-toggler{
+  border: 1px solid greenyellow;
+}
+.navbar-toggler-icon{
+    color: aliceblue;
+    background-color: rgb(156, 219, 160);
+    border: 1px solid ;
 }
