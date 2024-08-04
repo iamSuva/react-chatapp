@@ -14,7 +14,7 @@ function Homepage() {
       {
          navigate("/");
       }
-    },[auth.token]);
+    },[auth.token,navigate]);
   return (
     <div>
      <Navbar/>
