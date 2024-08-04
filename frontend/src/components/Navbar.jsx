@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css"
 import { useAuth } from "../context/authContext";
+import { toast } from "react-toastify";
 function Navbar() {
  const {auth,setauth}= useAuth();
 const handleLogout=()=>{
@@ -11,6 +12,7 @@ const handleLogout=()=>{
     token:null,
   })
 )
+toast.success("logout successfull....")
 localStorage.removeItem("loginuser");
 }
 

@@ -1,16 +1,18 @@
 .form-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #c7dece; /* Set background color */
+    background-color: #73bc89;
   }
   
   .login-form {
-    width: 300px;
+    width: 400px;
     padding: 20px;
-    background-color: rgb(200, 142, 142);
+    background-color: rgb(146, 172, 176);
     border-radius: 8px;
+    margin-top: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
   }
   
